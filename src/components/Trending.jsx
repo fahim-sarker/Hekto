@@ -1,0 +1,79 @@
+import React, { useContext } from 'react'
+import Container from './Container'
+import Clock from "../assets/clock.png"
+import Box2 from "../assets/box2.png"
+import { apidata } from './ContextApi';
+import { Link } from 'react-router-dom'
+
+const Trending = () => {
+
+    let data = useContext(apidata)
+
+    let Trending = data.filter((product) => product.id >= 50 && product.id <= 53)
+    let Exclusive = data.filter((product) => product.id >= 70 && product.id <= 72)
+
+
+
+    return (
+        <div className='py-[120px]'>
+            <Container>
+                <div className="pb-[50px] text-center">
+                    <h2 className='text-[42px] font-joss font-bold pb-[48px]'>Trending Products</h2>
+                </div>
+                <div className="">
+                    <Link to="/shop">
+                        <div className="flex justify-between">
+                            {Trending.map((trendingdata) => (
+                                <div className="w-[23%] h-[400px] py-3 px-3 shadow-xl bg-[#FFFFFF]">
+                                    <div className="flex justify-center">
+                                        <img className='w-full h-[244px]' src={trendingdata.thumbnail} alt="" />
+                                    </div>
+                                    <div className="text-center">
+                                        <h3 className='pt-[15px] text-[18px] font-joss font-bold py-[5px]'>{trendingdata.title}</h3>
+                                        <div className="flex gap-x-3 justify-center">
+                                            <p className='text-[16px] font-joss font-normal'>${trendingdata.price}</p>
+                                            <p className='text-[14px] text-[#151875] font-joss font-normal line-through'>$42.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Link>
+                    <div className="pt-[45px] flex justify-between">
+                        <div className="w-[35%] h-[320px] bg-[#FFF6FB]">
+                            <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
+                            <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">Shop Now</Link></p>
+                            <div className="flex justify-end pr-5">
+                                <img src={Clock} alt="" />
+                            </div>
+                        </div>
+                        <div className="w-[35%] h-[320px] bg-[#F5F6F8]">
+                            <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
+                            <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">View Collection</Link></p>
+                            <div className="flex justify-end pr-5">
+                                <img src={Box2} alt="" />
+                            </div>
+                        </div>
+                        <div className="w-[20%] h-[320px] bg-white">
+                            {Exclusive.map((exclusivedata) => (
+                                <Link to="/shop">
+                                    <div className="flex justify-between pb-7">
+                                        <div className="h-[80px] bg-[#F5F6F8] w-[30%]">
+                                            <img className='w-full h-[75px]' src={exclusivedata.thumbnail} alt="" />
+                                        </div>
+                                        <div className="w-[60%]">
+                                            <h3 className='pt-[15px] text-[18px] font-joss font-bold py-[5px]'>{exclusivedata.title}</h3>
+                                            <p className='text-[14px] text-[#151875] font-joss font-normal'>${exclusivedata.price}</p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    )
+}
+
+export default Trending
