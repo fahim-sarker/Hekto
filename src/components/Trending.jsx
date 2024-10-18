@@ -15,16 +15,16 @@ const Trending = () => {
 
 
     return (
-        <div className='py-[120px]'>
+        <div className='lg:py-[120px] py-10 lg:px-0 px-3'>
             <Container>
                 <div className="pb-[50px] text-center">
-                    <h2 className='text-[42px] font-joss font-bold pb-[48px]'>Trending Products</h2>
+                    <h2 className='lg:text-[42px] text-[20px] font-joss font-bold lg:pb-[48px] pb-5'>Trending Products</h2>
                 </div>
                 <div className="">
                     <Link to="/shop">
-                        <div className="flex justify-between">
+                        <div className="lg:flex justify-between">
                             {Trending.map((trendingdata) => (
-                                <div className="w-[23%] h-[400px] py-3 px-3 shadow-xl bg-[#FFFFFF]">
+                                <div className="lg:w-[23%] w-full h-[400px] py-3 px-3 shadow-xl bg-[#FFFFFF]">
                                     <div className="flex justify-center">
                                         <img className='w-full h-[244px]' src={trendingdata.thumbnail} alt="" />
                                     </div>
@@ -39,22 +39,22 @@ const Trending = () => {
                             ))}
                         </div>
                     </Link>
-                    <div className="pt-[45px] flex justify-between">
-                        <div className="w-[35%] h-[320px] bg-[#FFF6FB]">
+                    <div className="pt-[45px] lg:flex justify-between">
+                        <div className="lg:w-[35%] w-full h-[320px] bg-[#FFF6FB]">
                             <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
                             <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">Shop Now</Link></p>
                             <div className="flex justify-end pr-5">
                                 <img src={Clock} alt="" />
                             </div>
                         </div>
-                        <div className="w-[35%] h-[320px] bg-[#F5F6F8]">
+                        <div className="lg:w-[35%] w-full h-[320px] bg-[#F5F6F8]">
                             <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
                             <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">View Collection</Link></p>
                             <div className="flex justify-end pr-5">
                                 <img src={Box2} alt="" />
                             </div>
                         </div>
-                        <div className="w-[20%] h-[320px] bg-white">
+                        <div className="lg:w-[20%] w-full h-[320px] bg-white lg:*:pt-0 pt-4">
                             {Exclusive.map((exclusivedata) => (
                                 <Link to="/shop">
                                     <div className="flex justify-between pb-7">

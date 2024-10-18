@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 const News = () => {
     return (
-        <div className='py-[100px]'>
+        <div className='lg:py-[100px] lg:px-0 px-3'>
             <Container>
-                <div className="pt-[170px] pb-[100px] bg-arr bg-no-repeat bg-center bg-cover">
+                <div className="lg:pt-[170px] py-5 lg:pb-[100px] bg-arr bg-no-repeat bg-center bg-cover">
                     <div className="flex justify-center">
-                        <h2 className='text-[42px] leading-14 text-[navy] font-joss font-bold pb-[48px] text-center w-[700px]'>Get Leatest Update By Subscribe
+                        <h2 className='lg:text-[42px] text-[20px] leading-14 text-[navy] font-joss font-bold lg:pb-[48px] text-center w-[700px]'>Get Leatest Update By Subscribe
                             0ur Newslater</h2>
                     </div>
                     <div className="flex justify-center">
