@@ -74,7 +74,7 @@ const Cart = () => {
                       <button className='font-Sans font-bold text-[20px] px-3'>{item.quantity}</button>
                       <button onClick={() => handleincre(index)} className='font-Sans font-bold text-[20px] text-[#FFFF] bg-pink-500 h-[30px] w-[30px]'>+</button>
                     </div>
-                    <h3 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>£{(item.price * item.quantity).toFixed(2)}</h3>
+                    <h3 className='font-Sans font-bold text-[16px] text-[#0D0E43]'>£{(item.price * item.quantity)}</h3>
                   </div>
                 </div>
               ))}

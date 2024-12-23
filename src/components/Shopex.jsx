@@ -12,34 +12,34 @@ const Shopex = () => {
                 <div className="lg:pb-[50px] pb-5 text-center">
                     <h2 className='lg:text-[42px] text-[20px] font-joss font-bold lg:pb-[48px] pb-5'>What Shopex Offer!</h2>
                 </div>
-                <div className="lg:flex justify-between">
-                    <div className="lg:w-[23%] w-full py-[45px] lg:mt-0 mt-5 lg:h-[320px] text-center bg-[#ffff] shadow-xl">
+                <div className="flex flex-wrap justify-between">
+                    <div className="lg:w-[23%] w-[48%] py-[45px] lg:mt-0 mt-2 lg:h-[320px] h-[250px] text-center bg-[#ffff] shadow-xl">
                         <div className="flex justify-center">
-                            <img className='' src={Delivery} alt="" />
+                            <img className='' src={Delivery} alt=""/>
                         </div>
-                        <h3 className='font-joss font-medium text-[25px] py-[20px]'>24/7 Support</h3>
-                        <p className='font-joss font-normal text-[20px] px-[30px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <h3 className='font-joss font-medium lg:text-[25px] text-[16px] lg:py-[20px] py-[10px]'>24/7 Support</h3>
+                        <p className='font-joss font-normal lg:text-[20px] text-[14px] lg:px-[30px] px-[10px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                     </div>
-                    <div className="lg:w-[23%] w-full py-[45px] lg:mt-0 mt-5 lg:h-[320px] text-center bg-[#ffff] shadow-xl">
+                    <div className="lg:w-[23%] w-[48%] py-[45px] lg:mt-0 mt-2 lg:h-[320px] h-[250px] text-center bg-[#ffff] shadow-xl">
                         <div className="flex justify-center">
                             <img className='' src={Cash} alt="" />
                         </div>
-                        <h3 className='font-joss font-medium text-[25px] py-[20px]'>24/7 Support</h3>
-                        <p className='font-joss font-normal text-[20px] px-[30px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <h3 className='font-joss font-medium lg:text-[25px] text-[16px] lg:py-[20px] py-[10px]'>24/7 Support</h3>
+                        <p className='font-joss font-normal lg:text-[20px] text-[14px] lg:px-[30px] px-[10px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                     </div>
-                    <div className="lg:w-[23%] w-full py-[45px] lg:mt-0 mt-5 lg:h-[320px] text-center bg-[#] shadow-xl">
+                    <div className="lg:w-[23%] w-[48%] py-[45px] lg:mt-0 mt-5 lg:h-[320px] h-[250px] text-center bg-[#ffff] shadow-xl">
                         <div className="flex justify-center">
                             <img className='' src={premium} alt="" />
                         </div>
-                        <h3 className='font-joss font-medium text-[25px] py-[20px]'>24/7 Support</h3>
-                        <p className='font-joss font-normal text-[20px] px-[30px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <h3 className='font-joss font-medium lg:text-[25px] text-[16px] lg:py-[20px] py-[10px]'>24/7 Support</h3>
+                        <p className='font-joss font-normal lg:text-[20px] text-[14px] lg:px-[30px] px-[10px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                     </div>
-                    <div className="lg:w-[23%] w-full py-[45px] lg:mt-0 mt-5 lg:h-[320px] text-center bg-[#ffff] shadow-xl">
+                    <div className="lg:w-[23%] w-[48%] py-[45px] lg:mt-0 mt-5 lg:h-[320px] h-[250px] text-center bg-[#ffff] shadow-xl">
                         <div className="flex justify-center">
                             <img className='' src={Support} alt="" />
                         </div>
-                        <h3 className='font-joss font-medium text-[25px] py-[20px]'>24/7 Support</h3>
-                        <p className='font-joss font-normal text-[20px] px-[30px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
+                        <h3 className='font-joss font-medium lg:text-[25px] text-[16px] lg:py-[20px] py-[10px]'>24/7 Support</h3>
+                        <p className='font-joss font-normal lg:text-[20px] text-[14px] lg:px-[30px] px-[10px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                     </div>
                 </div>
             </Container>

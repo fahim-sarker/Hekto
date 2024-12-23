@@ -64,43 +64,43 @@ const Feature = () => {
             <div className="">
               <Slider {...settings}>
                 {data.map((item) => (
-                  <div className="relative lg:!w-[93%] group w-full h-[500px]">
-                    <div className="w-full h-[350px] bg-[#F6F7FB] flex justify-center items-center">
+                  <div className="relative lg:!w-[93%] group w-full lg:h-[500px] h-[300px]">
+                    <div className="w-full lg:h-[350px] h-[200px] bg-[#F6F7FB] flex justify-center items-center">
                       <img
-                        className="h-[178px] w-[178px] hover:scale-125 duration-700 cursor-pointer ease-in-out"
+                        className="lg:h-[178px] h-[120px] lg:w-[178px] w-[120px] hover:scale-125 duration-700 cursor-pointer ease-in-out"
                         src={item.thumbnail}
                         alt=""
                       />
                     </div>
-                    <div className="flex justify-center shadow-xl py-5 group-hover:bg-[#2F1AC4] duration-700 ease-in-out group-hover:text-white">
+                    <div className="flex justify-center shadow-xl lg:py-5 py-2 group-hover:bg-[#2F1AC4] duration-700 ease-in-out group-hover:text-white">
                       <div className="">
-                        <h2 className="text-[18px] font-joss font-bold py-[10px] text-pink-600 group-hover:text-white duration-700 ease-in-out">
+                        <h2 className="lg:text-[18px] text-[16px] font-joss lg:font-bold font-medium lg:py-[10px] py-[5px] text-pink-600 group-hover:text-white duration-700 ease-in-out">
                           {item.title}
                         </h2>
-                        <div className="flex gap-x-3 justify-center pb-[10px]">
+                        <div className="flex gap-x-3 justify-center lg:pb-[10px] pb-[5px]">
                           <div className="w-[14px] h-[4px] bg-[#05E6B7] rounded-[10px]"></div>
                           <div className="w-[14px] h-[4px] bg-[#F701A8] rounded-[10px]"></div>
                           <div className="w-[14px] h-[4px] bg-[#00009D] rounded-[10px]"></div>
                         </div>
-                        <h3 className="text-[18px] font-joss font-bold text-center">
+                        <h3 className="lg:text-[18px] text-[16px] font-joss lg:font-bold font-medium text-center">
                           Code - Y523201
                         </h3>
-                        <h3 className="text-center text-[18px] font-joss font-bold ">
+                        <h3 className="text-center text-[18px] font-joss lg:font-bold font-medium ">
                           ${item.price}
                         </h3>
                       </div>
                       <div className="absolute flex top-[8%] left-[25px] gap-x-5 opacity-0 group-hover:opacity-100 duration-700 ease-in-out">
-                        <div className="text-blue-400 text-[25px]">
+                        <div className="text-blue-400 lg:text-[25px] text-[18px]">
                           <FaShoppingCart />
                         </div>
-                        <div className="text-blue-400 text-[25px]">
+                        <div className="text-blue-400 lg:text-[25px] text-[18px]">
                           <FaRegHeart />
                         </div>
-                        <div className="text-blue-400 text-[25px]">
+                        <div className="text-blue-400 lg:text-[25px] text-[18px]">
                           <FaSearchPlus />
                         </div>
                       </div>
-                      <button className="text-[18px] font-joss font-medium py-3 px-4 bg-[#08D15F] text-white absolute bottom-[35%] left-[30%] opacity-0 group-hover:opacity-100 duration-700 ease-in-out">
+                      <button className="lg:text-[18px] text-[16px] font-joss font-medium lg:py-3 py-2 lg:px-4 px-3 bg-[#08D15F] text-white absolute bottom-[35%] lg:left-[30%] left-[32%] opacity-0 group-hover:opacity-100 duration-700 ease-in-out">
                         View Details
                       </button>
                     </div>

@@ -28,7 +28,7 @@ const Productdetails = () => {
     let Rating = Array.from({length:5},(_,index)=>{
         let ratingnumber = index +0.5
         return(
-            singledata.rating >= index+1 ?<FaStar /> : singledata.rating > ratingnumber ?<FaStarHalfAlt /> :<FaRegStar />
+            singledata.rating >= index+1 ? <FaStar /> : singledata.rating > ratingnumber ?<FaStarHalfAlt /> :<FaRegStar />
         )
     })
     

@@ -10,7 +10,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-        <div className='lg:h-[50px] lg:w-[50px] w-[30px] h-[30px] bg-[#FB2E86] rounded-full text-center flex justify-center items-center absolute top-1/2 right-0 z-40 cursor-pointer transform -translate-y-1/2' onClick={onClick}>
+        <div className='lg:h-[50px] lg:w-[50px] w-[30px] h-[30px] bg-[#FB2E86] rounded-full text-center flex justify-center items-center absolute bottom-0 right-0 z-40 cursor-pointer transform -translate-y-1/2' onClick={onClick}>
             <FaAngleRight className='inline-block lg:text-[20px] text-white' />
         </div>
     );
@@ -19,7 +19,7 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
-        <div className='lg:h-[50px] lg:w-[50px] w-[30px] h-[30px] bg-[#FB2E86] rounded-full text-center flex justify-center items-center absolute top-1/2 left-0 z-40 cursor-pointer transform -translate-y-1/2' onClick={onClick}>
+        <div className='lg:h-[50px] lg:w-[50px] w-[30px] h-[30px] bg-[#FB2E86] rounded-full text-center flex justify-center items-center absolute bottom-0 left-0 z-40 cursor-pointer transform -translate-y-1/2' onClick={onClick}>
             <FaAngleLeft className='inline-block lg:text-[20px] text-white' />
         </div>
     );
@@ -45,8 +45,8 @@ const Top = () => {
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
@@ -75,16 +75,16 @@ const Top = () => {
                 <div>
                     <Slider {...settings}>
                         {[...top, ...watch, ...shoes].map((toproducts) => (
-                            <div key={toproducts.id} className="relative !w-[93%] group h-[500px] flex flex-col items-center">
-                                <div className="w-[350px] h-[350px] rounded-full bg-[#F6F7FB] flex justify-center items-center group-hover:shadow-lg group-hover:shadow-blue duration-700 ease-in-out">
-                                    <img className='h-[178px] w-[178px] hover:scale-125 duration-700 cursor-pointer ease-in-out' src={toproducts.thumbnail} alt={toproducts.title} />
+                            <div key={toproducts.id} className="relative !w-[93%] group lg:h-[500px] h-[300px] flex flex-col items-center">
+                                <div className="lg:w-[350px] lg:h-[350px] h-[160px] w-[160px] rounded-full bg-[#F6F7FB] flex justify-center items-center group-hover:shadow-lg group-hover:shadow-blue duration-700 ease-in-out">
+                                    <img className='lg:h-[178px] lg:w-[178px] h-[120px] w-[120px] hover:scale-125 duration-700 cursor-pointer ease-in-out' src={toproducts.thumbnail} alt={toproducts.title} />
                                 </div>
                                 <div className="flex justify-center py-5">
                                     <div className="">
-                                        <h2 className='text-[20px] font-joss font-bold py-[10px] capitalize'>{toproducts.title}</h2>
-                                        <h3 className='text-center text-[18px] font-joss font-bold '>${toproducts.price}</h3>
+                                        <h2 className='lg:text-[20px] text-[14px] font-joss lg:font-bold font-normal py-[10px] capitalize text-center'>{toproducts.title}</h2>
+                                        <h3 className='text-center lg:text-[18px] text-[14px] font-joss font-bold '>${toproducts.price}</h3>
                                     </div>
-                                    <button className='text-[18px] font-joss font-medium py-3 px-4 bg-[#08D15F] text-white absolute bottom-[35%] left-[35%] opacity-0 group-hover:opacity-100 duration-700 ease-in-out'>
+                                    <button className='lg:text-[18px] text-[14px] font-joss font-medium lg:py-3 lg:px-4 py-2 px-3 bg-[#08D15F] text-white absolute lg:bottom-[35%] bottom-[53%] lg:left-[35%] left-[22%] opacity-0 group-hover:opacity-100 duration-700 ease-in-out'>
                                         <Link to="/shop">View Shop</Link>
                                     </button>
                                 </div>

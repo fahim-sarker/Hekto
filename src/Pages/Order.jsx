@@ -1,13 +1,11 @@
 import React from 'react'
 import { MdOutlineDone } from "react-icons/md";
-import Sale from "../assets/sale.png"
 import { Link } from 'react-router-dom'
 import { useSelector } from "react-redux"
 
 
 
 const Checkoutpage = () => {
-
   let data = useSelector((state) => state.product.cartitem)
 
   const {Totalprice} = data.reduce((acc,item)=>{

@@ -22,14 +22,14 @@ const Trending = () => {
                 </div>
                 <div className="">
                     <Link to="/shop">
-                        <div className="lg:flex justify-between">
+                        <div className="flex flex-wrap justify-between">
                             {Trending.map((trendingdata) => (
-                                <div className="lg:w-[23%] w-full h-[400px] py-3 px-3 shadow-xl bg-[#FFFFFF]">
+                                <div className="lg:w-[23%] w-[48%] lg:h-[400px] h-[250px] lg:mb-0 mb-3 py-3 px-3 shadow-xl bg-[#FFFFFF]">
                                     <div className="flex justify-center">
-                                        <img className='w-full h-[244px]' src={trendingdata.thumbnail} alt="" />
+                                        <img className='w-full lg:h-[244px] h-[100px]' src={trendingdata.thumbnail} alt="" />
                                     </div>
                                     <div className="text-center">
-                                        <h3 className='pt-[15px] text-[18px] font-joss font-bold py-[5px]'>{trendingdata.title}</h3>
+                                        <h3 className='pt-[15px] lg:text-[18px] text-[16px] font-joss lg:font-bold font-normal py-[5px]'>{trendingdata.title}</h3>
                                         <div className="flex gap-x-3 justify-center">
                                             <p className='text-[16px] font-joss font-normal'>${trendingdata.price}</p>
                                             <p className='text-[14px] text-[#151875] font-joss font-normal line-through'>$42.00</p>
@@ -39,18 +39,18 @@ const Trending = () => {
                             ))}
                         </div>
                     </Link>
-                    <div className="pt-[45px] lg:flex justify-between">
-                        <div className="lg:w-[35%] w-full h-[320px] bg-[#FFF6FB]">
-                            <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
-                            <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">Shop Now</Link></p>
+                    <div className="pt-[45px] flex flex-wrap justify-between">
+                        <div className="lg:w-[35%] w-[48%] lg:h-[320px] h-[240px] bg-[#FFF6FB]">
+                            <h2 className='pt-[34px] px-5 lg:text-[24px] text-[16px] font-joss font-medium '>23% off in all products</h2>
+                            <p className='pt-[10px] text-pink-700 underline  px-5 lg:text-[18px] text-[14px] font-joss font-medium cursor-pointer'><Link to="/shop">Shop Now</Link></p>
                             <div className="flex justify-end pr-5">
-                                <img src={Clock} alt="" />
+                                <img src={Clock} alt="" className='lg:h-[100%] h-[100px]'/>
                             </div>
                         </div>
-                        <div className="lg:w-[35%] w-full h-[320px] bg-[#F5F6F8]">
-                            <h2 className='pt-[34px] px-5 text-[24px] font-joss font-medium '>23% off in all products</h2>
-                            <p className='pt-[10px] text-pink-700 underline  px-5 text-[18px] font-joss font-medium cursor-pointer'><Link to="/shop">View Collection</Link></p>
-                            <div className="flex justify-end pr-5">
+                        <div className="lg:w-[35%] w-[48%] lg:h-[320px] h-[240px] bg-[#F5F6F8]">
+                            <h2 className='pt-[34px] px-5 lg:text-[24px] text-[16px] font-joss font-medium '>23% off in all products</h2>
+                            <p className='pt-[10px] text-pink-700 underline  px-5 lg:text-[18px] text-[14px] font-joss font-medium cursor-pointer'><Link to="/shop">View Collection</Link></p>
+                            <div className="flex lg:justify-end justify-center lg:pr-5">
                                 <img src={Box2} alt="" />
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const Trending = () => {
                                             <img className='w-full h-[75px]' src={exclusivedata.thumbnail} alt="" />
                                         </div>
                                         <div className="w-[60%]">
-                                            <h3 className='pt-[15px] text-[18px] font-joss font-bold py-[5px]'>{exclusivedata.title}</h3>
+                                            <h3 className='pt-[15px] lg:text-[18px] text-[16px] font-joss font-bold py-[5px]'>{exclusivedata.title}</h3>
                                             <p className='text-[14px] text-[#151875] font-joss font-normal'>${exclusivedata.price}</p>
                                         </div>
                                     </div>

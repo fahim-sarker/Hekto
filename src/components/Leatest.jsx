@@ -67,7 +67,7 @@ const Leatest = () => {
               <div className="lg:flex justify-between flex-wrap">
                 {NewArrival.map((item) => (
                   <div className="lg:w-[32%] w-full group lg:mb-[100px] mb-5">
-                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-110">
+                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-105">
                       <img src={item.thumbnail} alt="" />
                       <div className="absolute opacity-0 top-[50%] group-hover:opacity-100 left-5 flex flex-col text-[20px] text-[#1389FF] group-hover:bottom-0 duration-500 ease-in-out">
                         <div className="className='cursor-pointer h-[45px] w-[45px] rounded-full hover:bg-[#EEEFFB] flex justify-center items-center cursor-pointer">
@@ -108,10 +108,10 @@ const Leatest = () => {
           </Tabs.Content>
           <Tabs.Content value="vue">
             <Link to="/shop">
-              <div className="=lg:flex justify-between flex-wrap">
+              <div className="lg:flex justify-between flex-wrap">
                 {BestSeller.map((item) => (
                   <div className="lg:w-[32%] w-full group lg:mb-[100px] mb-5">
-                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-110">
+                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-105">
                       <img src={item.thumbnail} alt="" />
                       <div className="absolute opacity-0 top-[50%] group-hover:opacity-100 left-5 flex flex-col text-[20px] text-[#1389FF] group-hover:bottom-0 duration-500 ease-in-out">
                         <div className="className='cursor-pointer h-[45px] w-[45px] rounded-full hover:bg-[#EEEFFB] flex justify-center items-center cursor-pointer">
@@ -155,7 +155,7 @@ const Leatest = () => {
               <div className="lg:flex justify-between flex-wrap">
                 {Featured.map((item) => (
                   <div className="lg:w-[32%] w-full group lg:mb-[100px] mb-5">
-                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-110">
+                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-105">
                       <img src={item.thumbnail} alt="" />
                       <div className="absolute opacity-0 top-[50%] group-hover:opacity-100 left-5 flex flex-col text-[20px] text-[#1389FF] group-hover:bottom-0 duration-500 ease-in-out">
                         <div className="className='cursor-pointer h-[45px] w-[45px] rounded-full hover:bg-[#EEEFFB] flex justify-center items-center cursor-pointer">
@@ -199,7 +199,7 @@ const Leatest = () => {
               <div className="lg:flex justify-between flex-wrap">
                 {SpecialOffer.map((item) => (
                   <div className="lg:w-[32%] w-full group lg:mb-[100px] mb-5">
-                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-110">
+                    <div className="w-full bg-[#F6F7FB] h-[270px] py-3 flex justify-center relative overflow-hidden group-hover:overflow-visible group-hover:bg-white duration-700 ease-in-out lg:hover:scale-105">
                       <img src={item.thumbnail} alt="" />
                       <div className="absolute opacity-0 top-[50%] group-hover:opacity-100 left-5 flex flex-col text-[20px] text-[#1389FF] group-hover:bottom-0 duration-500 ease-in-out">
                         <div className="className='cursor-pointer h-[45px] w-[45px] rounded-full hover:bg-[#EEEFFB] flex justify-center items-center cursor-pointer">

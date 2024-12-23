@@ -2,9 +2,6 @@ import React, { useContext } from "react";
 import Container from "./Container";
 import { Tabs } from "@ark-ui/react";
 import { IoMdCheckmark } from "react-icons/io";
-import Unique from "../assets/unique.png";
-import Unique1 from "../assets/sofa.png";
-import Unique2 from "../assets/chair.png";
 import { apidata } from "./ContextApi";
 import { Link } from "react-router-dom";
 
@@ -64,7 +61,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -74,7 +71,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -86,7 +83,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Clear lines and geomatric figures.
                         </p>
                       </div>
@@ -96,14 +93,14 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="py-10">
-                    <button className="h-[60px] w-[170px] rounded-sm bg-pink-600 text-white font-joss font-medium text-[20px] cursor-pointer">
+                  <div className="py-10 lg:text-start text-center">
+                    <button className="lg:h-[60px] lg:w-[170px] h-[50px] w-[150px] rounded-sm bg-pink-600 text-white font-joss font-medium lg:text-[20px] text-[18px] cursor-pointer">
                       <Link to="/shop">Shop Now</Link>
                     </button>
                   </div>
@@ -142,7 +139,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -152,7 +149,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -164,7 +161,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Clear lines and geomatric figures.
                         </p>
                       </div>
@@ -174,14 +171,14 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="py-10">
-                    <button className="h-[60px] w-[170px] rounded-sm bg-pink-600 text-white font-joss font-medium text-[20px]">
+                  <div className="py-10 lg:text-start text-center">
+                    <button className="lg:h-[60px] lg:w-[170px] h-[50px] w-[150px] rounded-sm bg-pink-600 text-white font-joss font-medium lg:text-[20px] text-[18px] cursor-pointer">
                       <Link to="/shop">Shop Now</Link>
                     </button>
                   </div>
@@ -202,7 +199,7 @@ const Discount = () => {
           </Tabs.Content>
           <Tabs.Content value="solid">
             {Realme.map((realmephone) => (
-              <div className="klg:flex justify-between">
+              <div className="lg:flex justify-between">
                 <div className="lg:w-[50%] w-full">
                   <h2 className="lg:text-[35px] text-[18px] font-joss font-medium text-[navy] pb-4">
                     20% Discount Of All Products
@@ -220,7 +217,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -230,7 +227,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
@@ -242,7 +239,7 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Clear lines and geomatric figures.
                         </p>
                       </div>
@@ -252,14 +249,14 @@ const Discount = () => {
                         <IoMdCheckmark />
                       </div>
                       <div className="">
-                        <p className="text-[18px] font-joss font-normal w-[500px] leading-[30px] text-[#B7BACB]">
+                        <p className="text-[18px] font-joss font-normal lg:w-[500px] leading-[30px] text-[#B7BACB]">
                           Material expose like metals
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="py-10">
-                    <button className="h-[60px] w-[170px] rounded-sm bg-pink-600 text-white font-joss font-medium text-[20px]">
+                  <div className="py-10 lg:text-start text-center">
+                    <button className="lg:h-[60px] lg:w-[170px] h-[50px] w-[150px] rounded-sm bg-pink-600 text-white font-joss font-medium lg:text-[20px] text-[18px] cursor-pointer">
                       <Link to="/shop">Shop Now</Link>
                     </button>
                   </div>
