@@ -5,11 +5,11 @@ const Login = () => {
     return (
         <>
             <div className=''>
-                <div className="pt-[96px] pb-[126px] bg-[#F6F5FF]">
+                <div className="lg:pt-[96px] lg:pb-[126px] py-[30px] lg:px-0 px-3 bg-[#F6F5FF]">
                     <div className="container mx-auto">
-                        <h2 className='font-joss font-bold text-[36px]'>Log in</h2>
+                        <h2 className='font-joss font-bold lg:text-[36px] text-[20px]'>Log in</h2>
                         <ul className='flex gap-1'>
-                            <li className='font-joss font-normal text-[16px]'>Home .</li>
+                            <li className='font-joss font-normal text-[16px]'><Link to="/">Home .</Link></li>
                             <li className='font-joss font-normal text-[16px]'>Pages .</li>
                             <li className='font-joss font-normal text-[16px] text-pink-600'>Sign in </li>
                         </ul>

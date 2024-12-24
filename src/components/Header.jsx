@@ -13,7 +13,7 @@ const Header = () => {
   let data = useSelector((state) => state.product.cartitem)
   
   return (
-    <section className='bg-[#7E33E0] lg:py-[14px] lg:px-0 px-3'>
+    <section className='bg-[#7E33E0] lg:py-[14px] py-1 lg:px-0 px-3'>
       <Container>
         <div className="flex justify-between cursor-pointer">
           <div className="w-1/5 flex items-center gap-x-2 ">
@@ -45,7 +45,7 @@ const Header = () => {
               <Link to="/signup">
                 <IoCartOutline className='text-white font-joss text-[25px] font-medium' />
               </Link>
-                {data.length > 0 ? <div className="absolute top-0 right-[10px] text-center  h-[20px] w-[20px] bg-[#000] rounded-full">
+                {data.length > 0 ? <div className="absolute lg:top-0 lg:right-[10px] top-0 right-0 text-center h-[20px] w-[20px] bg-[#000] rounded-full">
               {data.length}
               </div> : ""}
             </div>
