@@ -66,7 +66,9 @@ const Nabvar = () => {
       <Container>
         <div className="flex justify-between items-center">
           <div className="w-[15%]">
-            <img src={Ban} alt="banner" />
+            <Link to="/">
+              <img src={Ban} alt="banner" />
+            </Link>
           </div>
           <div className="lg:w-[35%] relative flex justify-center">
             <div className="">
@@ -87,9 +89,8 @@ const Nabvar = () => {
                   <div
                     key={item.id}
                     onClick={() => handleproductdetailpage(item.id)}
-                    className={`bg-[#000] flex items-center text-white cursor-pointer ${
-                      selectedIndex === index ? "bg-[#FB2E86]" : ""
-                    }`}
+                    className={`bg-[#000] flex items-center text-white cursor-pointer ${selectedIndex === index ? "bg-[#FB2E86]" : ""
+                      }`}
                   >
                     <img
                       className="w-[100px] h-[100px]"
@@ -104,11 +105,10 @@ const Nabvar = () => {
           </div>
           <div className="lg:w-[45%] relative flex justify-end">
             <ul
-              className={`lg:flex lg:flex-row flex flex-col gap-y-3 gap-x-10  pl-[20px] pt-[20px] lg:pt-0 font-joss text-[#000] text-[18px] font-medium lg:static fixed duration-[800ms] z-50 cursor-pointer  ${
-                menu == true
-                  ? "bg-gray-300 top-[0px] left-0 w-1/2 h-full py-2"
-                  : "top-[0px] left-[-250px] h-full"
-              }`}
+              className={`lg:flex lg:flex-row flex flex-col gap-y-3 gap-x-10  pl-[20px] pt-[20px] lg:pt-0 font-joss text-[#000] text-[18px] font-medium lg:static fixed duration-[800ms] z-50 cursor-pointer  ${menu == true
+                ? "bg-gray-300 top-[0px] left-0 w-1/2 h-full py-2"
+                : "top-[0px] left-[-250px] h-full"
+                }`}
             >
               <li className='text-black flex justify-between items-center lg:hidden'>Menu <ImCross className='mr-[20px] lg:hidden' /></li>
               <div className="flex items-center hover:text-[#FB2E86] duration-300 ease-in-out">
@@ -137,7 +137,7 @@ const Nabvar = () => {
               </li>
             </ul>
             <div className="lg:hidden" ref={menuref}>
-              <FaBars className="cursor-pointer text-[30px] border-2 border-[#FB2e86]"/>
+              <FaBars className="cursor-pointer text-[30px] border-2 border-[#FB2e86]" />
             </div>
           </div>
         </div>

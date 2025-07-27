@@ -11,9 +11,9 @@ import { useSelector } from 'react-redux';
 
 const Header = () => {
   let data = useSelector((state) => state.product.cartitem)
-  
+
   return (
-    <section className='bg-[#7E33E0] lg:py-[14px] py-1 lg:px-0 px-3'>
+    <section className='bg-[#7E33E0] py-[14px] lg:px-0 px-3'>
       <Container>
         <div className="flex justify-between cursor-pointer">
           <div className="w-1/5 flex items-center gap-x-2 ">
@@ -27,28 +27,33 @@ const Header = () => {
           <div className="w-3/5 font-joss  text-end flex justify-end items-center text-[16px] gap-x-10 text-white" >
             <div className="flex gap-x-1 items-center">
               <h2 className="text-white font-joss text-[18px] font-medium lg:block hidden">English</h2>
-              <FaAngleDown className="text-white font-joss text-[18px] font-medium lg:block hidden"/>
+              <FaAngleDown className="text-white font-joss text-[18px] font-medium lg:block hidden" />
             </div>
             <div className="flex gap-x-1 items-center">
               <h2 className="text-white font-joss text-[18px] font-medium lg:block hidden">USD</h2>
-              <FaAngleDown className="text-white font-joss text-[18px] font-medium lg:block hidden"/>
+              <FaAngleDown className="text-white font-joss text-[18px] font-medium lg:block hidden" />
             </div>
             <div className="flex gap-x-1 items-center">
-                <h2 className='text-white font-joss lg:text-[18px] text-[14px] font-medium'><Link to="/login">Login</Link></h2>
-                <FaRegUser className="text-white font-joss lg:text-[18px] text-[14px] font-medium"/>
+              <h2 className='text-white font-joss lg:text-[18px] text-[14px] font-medium'><Link to="/login">Login</Link></h2>
+              <FaRegUser className="text-white font-joss lg:text-[18px] text-[14px] font-medium" />
             </div>
             <div className="flex gap-x-1 items-center">
               <h2 className="text-white font-joss lg:text-[18px] text-[14px] font-medium">Wishlist</h2>
-              <CiHeart className="text-white font-joss lg:text-[18px] text-[14px] font-medium"/>
+              <CiHeart className="text-white font-joss lg:text-[18px] text-[14px] font-medium" />
             </div>
-            <div className="realative">
+            <div className="relative">
               <Link to="/signup">
-                <IoCartOutline className='text-white font-joss text-[25px] font-medium' />
+                <IoCartOutline className="text-white font-joss text-[25px] font-medium" />
               </Link>
-                {data.length > 0 ? <div className="absolute lg:top-0 lg:right-[10px] top-0 right-0 text-center h-[20px] w-[20px] bg-[#000] rounded-full">
-              {data.length}
-              </div> : ""}
+
+              {data.length > 0 && (
+                <div className="absolute top-[-6px] right-[-12px] text-[12px] h-[20px] w-[20px] bg-black text-white rounded-full
+                 flex items-center justify-center leading-[20px]">
+                  {data.length}
+                </div>
+              )}
             </div>
+
           </div>
         </div>
       </Container>
